@@ -1,3 +1,4 @@
+2019-10-13:
 https://github.com/flozz/rivalcfg
 https://github.com/andrepl/rivalctl/blob/f175076648f22f09ba29f0949270bed3ed0e071a/rival/rival.py#L75
 https://github.com/antage/ssv2leds/blob/master/main.go
@@ -10,3 +11,5 @@ Bus 001 Device 005: ID 1038:12aa SteelSeries ApS SteelSeries Arctis 5
 $ ls -l /sys/bus/hid/drivers/hid-generic
 lrwxrwxrwx 1 root root    0 Oct 13 17:46 0003:1038:12AA.0009 -> ../../../../devices/pci0000:00/0000:00:14.0/usb1/1-7/1-7:1.5/0003:1038:12AA.0009
 
+chown me /dev/hidraw8 
+for file permissions

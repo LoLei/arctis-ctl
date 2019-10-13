@@ -1,7 +1,7 @@
 # https://github.com/andrepl/rivalctl/
 
 import pyudev
-import hidraw
+import hidrawpure as hidraw
 
 HS_HID_ID = "0003:00001038:000012AA"
 
@@ -35,10 +35,12 @@ def main():
     ##### Hardcoded test report
     color = [123, 0, 55]
     args = (chr(1),) + tuple([chr(b) for b in color])
+    print(args)
     report = "\x08%s%s%s%s" % args
+    report = "\x09"
     print(report)
-
     ######
+
     send(report)
 
 

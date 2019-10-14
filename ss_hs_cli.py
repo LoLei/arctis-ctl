@@ -36,8 +36,15 @@ def main():
     color = [123, 0, 55]
     args = (chr(1),) + tuple([chr(b) for b in color])
     print(args)
-    report = "\x08%s%s%s%s" % args
-    report = "\x09"
+    # report = "\x08%s%s%s%s" % args
+    b1 = "\x87"
+    b2 = "\x22"
+
+    report = "\x04" + "\x40" + "\x01" + "\x11" + b1 + b2 + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00" + "\x00"
+
+    # report[4] = b1
+    # report[5] = b2
+
     print(report)
     ######
 

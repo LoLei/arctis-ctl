@@ -24,6 +24,7 @@ https://git.janouch.name/p/sensei-raw-ctl/src/branch/master/NOTES
 https://wiki.wireshark.org/CaptureSetup/USB
 https://medium.com/@ali.bawazeeer/kaizen-ctf-2018-reverse-engineer-usb-keystrok-from-pcap-file-2412351679f4
 
+Wireshark filter: usb.dst == "1.4.0" || usb.dst == "1.4.4"
 ################################################################################
 
 Found RGB values in packets:

@@ -14,8 +14,11 @@ lrwxrwxrwx 1 root root    0 Oct 13 17:46 0003:1038:12AA.0009 -> ../../../../devi
 chown me /dev/hidraw8 
 for file permissions
 
-2019-10-24:
+2019-10-14:
 https://github.com/Gibtnix/MSIKLM/blob/master/src/msiklm.c
 https://github.com/antage/ssv2leds/blob/master/main.go
 https://purplepalmdash.github.io/2016/02/03/hacking-steelseries-engine-3-usb-mouse-under-linux/
 https://git.janouch.name/p/sensei-raw-ctl/src/branch/master/NOTES
+
+2019-10-15:
+https://wiki.wireshark.org/CaptureSetup/USB

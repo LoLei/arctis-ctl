@@ -22,6 +22,7 @@ https://git.janouch.name/p/sensei-raw-ctl/src/branch/master/NOTES
 
 2019-10-15:
 https://wiki.wireshark.org/CaptureSetup/USB
+https://medium.com/@ali.bawazeeer/kaizen-ctf-2018-reverse-engineer-usb-keystrok-from-pcap-file-2412351679f4
 
 Found RGB values in packets:
 E.g. #ffea00:

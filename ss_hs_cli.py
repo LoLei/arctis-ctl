@@ -6,7 +6,7 @@ https://github.com/andrepl/rivalctl/
 import pyudev
 import hidrawpure as hidraw
 
-HS_HID_ID = "0003:00001038:000012AA"
+HS_HID_ID = "0003:00001038:000012AA"  # Arctis 5
 
 
 def find_device_path():

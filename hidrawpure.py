@@ -1,9 +1,8 @@
 """
-from https://github.com/vpelletier/python-hidraw
-
- copied and renamed due to the existence of another 'hidraw' package on pypi which seems to conflict in some way.
-
+From:
+https://github.com/andrepl/rivalctl/blob/f175076648f22f09ba29f0949270bed3ed0e071a/rival/hidrawpure.py
 """
+
 import ctypes
 import collections
 import fcntl

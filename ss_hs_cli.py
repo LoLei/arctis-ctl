@@ -1,4 +1,7 @@
-# https://github.com/andrepl/rivalctl/
+"""
+Based on:
+https://github.com/andrepl/rivalctl/
+"""
 
 import pyudev
 import hidrawpure as hidraw

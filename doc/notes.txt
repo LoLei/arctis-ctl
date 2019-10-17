@@ -16,10 +16,11 @@ chown me /dev/hidraw8
 for file permissions
 
 2019-10-14:
+Other links of relevance:
 https://github.com/Gibtnix/MSIKLM/blob/master/src/msiklm.c
 https://github.com/antage/ssv2leds/blob/master/main.go
 https://purplepalmdash.github.io/2016/02/03/hacking-steelseries-engine-3-usb-mouse-under-linux/
--> Inconclusive
+=> Inconclusive
 https://git.janouch.name/p/sensei-raw-ctl/src/branch/master/NOTES
 
 2019-10-15:

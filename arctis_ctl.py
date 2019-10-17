@@ -6,7 +6,9 @@ https://github.com/andrepl/rivalctl/
 import pyudev
 import hidrawpure as hidraw
 
-HS_HID_ID = "0003:00001038:000012AA"  # Arctis 5
+HS_HID_ID = "0003:00001038:000012AA"  # 1038:12aa SteelSeries ApS SteelSeries Arctis 5
+# HS_HID_ID = "0003:00001532:00000060"  # 1532:0060 Razer USA, Ltd Razer Lancehead Tournament Edition
+# HS_HID_ID = "0003:00001532:0000021a"  # 1532:021a Razer USA, Ltd BlackWidow X Tournament Edition Chroma
 
 
 def find_device_path():
@@ -41,20 +43,27 @@ def send(report, device=None):
     device.sendFeatureReport(report)
 
 
-def main():
-    print("> arctis_ctl: ")
-    ##### Hardcoded test report
+def create_report():
+    # Hardcoded test report
     color = [123, 0, 55]
     args = (chr(1),) + tuple([chr(b) for b in color])
     # print(args)
     # report = "\x08%s%s%s%s" % args
-    # report = '\x09'  # Commit
+    # report = '\x09'  # Save
 
-    report = "\x1c\x00\xa0\x09\x4d\x4d\x03\x9f\xff\xff\x00\x00\x00\x00\x1b\x00\x00\x01\x00\x04\x00\x00\x02\x25\x00\x00\x00\x01\x06\x81\x43\x01\x22\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+    report_full = "\x1c\x00\xa0\x09\x4d\x4d\x03\x9f\xff\xff\x00\x00\x00\x00\x1b\x00\x00\x01\x00\x04\x00\x00\x02\x25\x00\x00\x00\x01\x06\x81\x43\x01\x22\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+    report_leftover = "\x06\x81\x43\x01\x22\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
 
+    report = report_leftover
+    print("Report length: {}".format(len(report)))
     print(report)
-    ######
 
+    return report
+
+
+def main():
+    print("> arctis_ctl: ")
+    report = create_report()
     send(report)
 
 

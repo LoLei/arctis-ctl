@@ -103,3 +103,6 @@ Fourth packet afterwards:
 0030   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 0040   00
 (Difference 01 - 00)
+
+2019-10-15:
+https://github.com/weinholt/sibctrl

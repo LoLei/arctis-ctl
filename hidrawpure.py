@@ -125,6 +125,8 @@ class HIDRaw(object):
         """
         length = len(report) + 1
         buf = ctypes.create_string_buffer(b(chr(report_num) + report), length)
+        print(report)
+        print(buf.raw)
         self._ioctl(_HIDIOCSFEATURE(length), buf, True)
 
     def getFeatureReport(self, report_num=0, length=63):

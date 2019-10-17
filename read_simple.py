@@ -1,6 +1,7 @@
 # https://hackaday.com/2011/03/17/writing-python-drivers-for-input-devices/
 import sys
-pipe = open('/dev/hidraw8', 'r')
+
+pipe = open('/dev/input/by-id/usb-SteelSeries_SteelSeries_Arctis_5_00000000-event-if05', 'r')
 action = []
 spacing = 0
 while 1:

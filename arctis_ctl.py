@@ -31,6 +31,13 @@ def send(report, device=None):
     """send a report packet to the device"""
     if device is None:
         device = open_device()
+    print("Found device: ")
+    print(device.getName())
+    print(device.getInfo())
+    print(device.getPhysicalAddress())
+    # print(device.getRawReportDescriptor())
+
+    print("Sending report...")
     device.sendFeatureReport(report)
 
 

@@ -7,4 +7,5 @@ Since there is no SteelSeries driver on Linux and I still want to control the LE
 ### Disclaimer
 :warning: This is a WIP. Only tested on the Arctis 5. (Literally hardcoded HID ID)  
 Possibly in a non-working state at any given time.  
-CLI will be exposed once everything is ~working~ stable.
+CLI will be exposed once everything is ~working~ stable.  
+Different implementation using fork of `sibctrl` and `libusb1` can be found [here](https://github.com/LoLei/sibctrl).

@@ -1,4 +1,5 @@
 2019-10-13:
+Similar tools:
 https://github.com/flozz/rivalcfg
 https://github.com/andrepl/rivalctl/blob/f175076648f22f09ba29f0949270bed3ed0e071a/rival/rival.py#L75
 https://github.com/antage/ssv2leds/blob/master/main.go
@@ -15,9 +16,11 @@ chown me /dev/hidraw8
 for file permissions
 
 2019-10-14:
+Other links of relevance:
 https://github.com/Gibtnix/MSIKLM/blob/master/src/msiklm.c
 https://github.com/antage/ssv2leds/blob/master/main.go
 https://purplepalmdash.github.io/2016/02/03/hacking-steelseries-engine-3-usb-mouse-under-linux/
+=> Inconclusive
 https://git.janouch.name/p/sensei-raw-ctl/src/branch/master/NOTES
 
 2019-10-15:
@@ -100,3 +103,6 @@ Fourth packet afterwards:
 0030   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 0040   00
 (Difference 01 - 00)
+
+2019-10-15:
+https://github.com/weinholt/sibctrl

@@ -1,9 +1,8 @@
 """
-from https://github.com/vpelletier/python-hidraw
-
- copied and renamed due to the existence of another 'hidraw' package on pypi which seems to conflict in some way.
-
+From:
+https://github.com/andrepl/rivalctl/blob/f175076648f22f09ba29f0949270bed3ed0e071a/rival/hidrawpure.py
 """
+
 import ctypes
 import collections
 import fcntl
@@ -125,6 +124,9 @@ class HIDRaw(object):
         """
         length = len(report) + 1
         buf = ctypes.create_string_buffer(b(chr(report_num) + report), length)
+        print("> HIDraw: ")
+        print(report)
+        print(buf.raw)
         self._ioctl(_HIDIOCSFEATURE(length), buf, True)
 
     def getFeatureReport(self, report_num=0, length=63):
